@@ -5,9 +5,10 @@ var repository = [
   { name: "Charizard", height: 5, types: ["fire", "flying"] }
 ];
 
-for (var i = 0; i < repository.length; i++) {
+// for (var i = 0; i < repository.length; i++) {
+repository.forEach(function(pokemon) {
   var size;
-  if (repository[i].height > 4) {
+  if (pokemon.height > 4) {
     size = " - Wow that's a big one!";
   } else {
     size = "";
@@ -15,15 +16,15 @@ for (var i = 0; i < repository.length; i++) {
 
   document.write(
     "Name: " +
-      repository[i].name +
+      pokemon.name +
       " (Height: " +
-      repository[i].height +
+      pokemon.height +
       ")" +
       size +
       "<br>" +
       " Type: " +
-      repository[i].types +
+      pokemon.types +
       "<br>" +
       "<br>"
   );
-}
+});
