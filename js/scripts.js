@@ -7,9 +7,10 @@ var repository = [
 
 for (var i = 0; i < repository.length; i++) {
   var size;
-  if (repository[i].height > 4);
-  {
-    size = "Wow that's a big one!";
+  if (repository[i].height > 4) {
+    size = " - Wow that's a big one!";
+  } else {
+    size = "";
   }
 
   document.write(
@@ -18,7 +19,6 @@ for (var i = 0; i < repository.length; i++) {
       " (Height: " +
       repository[i].height +
       ")" +
-      " - " +
       size +
       "<br>" +
       " Type: " +
