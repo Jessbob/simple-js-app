@@ -11,6 +11,7 @@ body {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
+  margin: auto;
 }
 
 ul {
@@ -24,7 +25,7 @@ ul {
   border: black;
   display: inline-block;
   font-family: inherit;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   background-color: #3a5ca8;
   color: #ffcb05;
@@ -42,6 +43,32 @@ ul {
   cursor: pointer;
   opacity: 0.8;
   color: #ffa805;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 900;
+}
+@media all and (max-width: 500px) {
+  .pokedex {
+    width: 90%;
+  }
+  .list-item {
+    font-size: 22px;
+  }
+  .list-item:hover {
+    font-size: 24px;
+  }
+  .list-item:focus {
+    font-size: 24px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 800px) {
+  .pokedex {
+    width: 70%;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .pokedex {
+    width: 50%;
+  }
 }
